@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  orbite:
+    image: node:17-alpine
+    volumes:
+      - ./:/api
+    working_dir: /api
+    command: yarn prod
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    expose:
+      - '3000'
+  database:
+    image: mongo
+    restart: unless-stopped
+    expose:
+      - '27017'
+    ports: # For dev only
+      - '27017:27017'
