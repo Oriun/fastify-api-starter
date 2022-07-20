@@ -19,6 +19,7 @@
 		"@fastify/under-pressure": "^7.0.0",
 		"@sinclair/typebox": "^0.23.5",
 		"@types/dotenv": "^8.2.0",
+		"@types/jest": "^28.1.6",
 		"@types/mongoose": "^5.11.97",
 		"@types/node": "^17.0.10",
 		"dotenv": "^16.0.0",
